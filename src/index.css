@@ -61,7 +61,7 @@ code {
   background-color: var(--darker-orange);
   border: none;
 }
-.btn-hit:focus {
+.btn-hit:focus, .btn-hit:active {
   background-color: var(--darker-orange);
   border: none;
 }
@@ -73,18 +73,24 @@ code {
   background-color: var(--darker-yellow);
   border: none;
 }
-.btn-stand:focus {
+.btn-stand:focus, .btn-stand:active {
   background-color: var(--darker-yellow);
   border: none;
 }
 .btn-deal {
   border: none;
+  box-shadow: none;
 }
 .btn-deal:hover {
   border: none;
+  box-shadow: none;
 }
-.btn-deal:focus {
+.btn-deal:focus, .btn-deal:active {
   border: none;
+  box-shadow: none;
+  transform: none;
+  animation: none;
+  outline: none;
 }
 
 

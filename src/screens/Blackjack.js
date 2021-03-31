@@ -80,7 +80,7 @@ const Blackjack = () => {
         } else if (addScore(pCard) > 21 && addScore(dCard) > 21) {
             setDraw(parseInt(draw + 1));
         } else if (Math.abs(addScore(pCard) - 21) < Math.abs(addScore(dCard) - 21) || addScore(dCard) > 21) {
-            if (addScore(pCard) < 22) {
+            if (addScore(pCard) < 22 && addScore(dCard) > 0 ) {
                 setWin(parseInt(win + 1));
             } else {
                 setLoss(parseInt(loss + 1));
