@@ -101,7 +101,7 @@ const Blackjack = () => {
             <div className="title">
                 <h1 className="">Let's Play A Game Of Blackjack!</h1>
                 <p className="">
-                    Blackjack is a simple game. You are playing against the dealer, or computer,
+                    Blackjack is a simple game. You play against the dealer, or computer,
                     to see who can get the closest to 21.
                 </p>
                 <ul className="rules">
