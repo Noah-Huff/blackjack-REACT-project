@@ -4,7 +4,6 @@ import Player from '../components/Player';
 import Score from '../components/Score';
 import Deck from '../deck';
 
-
 const Blackjack = () => {
     let [you] = useState("You");
     let [comp] = useState("Dealer");
@@ -99,7 +98,7 @@ const Blackjack = () => {
 
     return (
         <Container className="game-container text-center">
-            <div className="title">
+            <Container className="title">
                 <h1 className="">Let's Play A Game Of Blackjack!</h1>
                 <p className="">
                     Blackjack is a simple game. You play against the dealer, or computer,
@@ -110,9 +109,9 @@ const Blackjack = () => {
                     <li>Click "Stand" to let the dealer play</li>
                     <li>Click "Deal" to reset the game and add record your score</li>
                 </ul>
-            </div>
+            </Container>
             <Container fluid className="player-container">
-                <Row>
+                <Row className="player-row">
                     <Col>
                         <Player name={you} card={pCard} score={addScore(pCard)} />
                     </Col>

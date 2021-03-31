@@ -73,7 +73,7 @@ table, th, td {
   border: solid var(--primary-ivory) 1px;
   color: var(--primary-ivory);
 }
-.card {
+.playing-card {
   width: 125px;
   height: 165px;
   /* border: solid red 1px; */
@@ -84,4 +84,11 @@ table, th, td {
 .rules {
   /* text-align: left; */
   list-style-type: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .player-row {
+    /* background-color: blue; */
+    flex-direction: column;
+  }
 }

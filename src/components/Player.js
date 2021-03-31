@@ -11,7 +11,7 @@ const Player = ({ name, card, score }) => {
             <h1>{name}</h1>
             { (score < 22 ? <h3>Score: {score}</h3> : <h3 className="score-too-high">Score: {score} Is Too High!</h3>)}
             <Row className="card-area">
-                { card.map(c => ( c.value > 0 ? <Image key={c.index} className="card" src={c.img}></Image> : console.log("Blank Card")) )}
+                { card.map(c => ( c.value > 0 ? <Image key={c.index} className="playing-card" src={c.img}></Image> : console.log("Blank Card")) )}
 
             </Row>
         </div>
