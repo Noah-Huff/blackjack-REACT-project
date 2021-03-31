@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start --prefix blackjack"
+    "start": "npm run static --prefix blackjack"
   },
   "@types/node": {
     "version": "14.14.35",
