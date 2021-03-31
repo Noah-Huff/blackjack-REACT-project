@@ -95,4 +95,16 @@ table, th, td {
     /* background-color: blue; */
     flex-direction: column;
   }
+  .game-container {
+    flex-direction: column;
+  }
+  .buttons-score {
+    order: 2;
+  }
+  .title {
+    order: 1;
+  }
+  .player-container {
+    order: 3;
+  }
 }
