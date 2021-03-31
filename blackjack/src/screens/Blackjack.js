@@ -32,7 +32,7 @@ const Blackjack = () => {
     }
 
     let playerCard = () => {
-        if (addScore(pCard) < 22) {
+        if (addScore(pCard) < 22 && dCard.length === 1) {
             setPCard((prevState) => [...prevState, drawCard(pCard.length)]);
             console.log("P-Card: ", pCard);
         }
@@ -40,28 +40,28 @@ const Blackjack = () => {
 
 
     let dealerPlay = () => {
-        let getCard;
-        let dealerScore = 0;
-        let index = 1;
-        let dealerDeck = [{ _id: '0', card: '0', value: 0, img: '-' }];
+        if (pCard.length > 1) {
 
-        while (dealerScore < 15) {
-            getCard = drawCard(index);
-            if (dealerScore > 14 && getCard.value > 7) {
+            let getCard;
+            let dealerScore = 0;
+            let index = 1;
+            let dealerDeck = [{ _id: '0', card: '0', value: 0, img: '-' }];
+
+            while (dealerScore < 15) {
                 getCard = drawCard(index);
+                if (dealerScore > 14 && getCard.value > 7) {
+                    getCard = drawCard(index);
+                }
+                index += 1;
+                dealerDeck = [...dealerDeck, getCard];
+                dealerScore += +getCard.value;
+                console.log("DEALER DECK ", dealerDeck);
             }
-            index += 1;
-            dealerDeck = [...dealerDeck, getCard];
-            dealerScore += +getCard.value;
-            console.log("DEALER DECK ", dealerDeck);
+            setDCard(dealerDeck);
+
+            console.log("D-CARD ", dCard);
+
         }
-        setDCard(dealerDeck);
-
-        //let dScore = addScore(dScore);
-        //let end = Date.now() + 500;
-        //while (Date.now() < end);
-        console.log("D-CARD ", dCard);
-
     }
 
     let resetPlay = () => {
