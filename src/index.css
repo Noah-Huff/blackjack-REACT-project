@@ -32,6 +32,7 @@ code {
   background-color: var(--primary-brown);
   color: var(--primary-ivory);
   padding-bottom: 15px;
+  display: grid;
 }
 .player {
   border: solid var(--primary-ivory) 2px;
@@ -56,16 +57,19 @@ code {
   background-color: var(--primary-orange);
   border: none;
 }
-.btn-hit:hover {
-  background-color: var(--darker-orange)
+.btn-hit:hover, .btn-hit:active {
+  background-color: var(--darker-orange);
+  border: none;
 }
 .btn-stand {
   background-color: var(--primary-yellow);
   border: none;
 }
-.btn-stand:hover {
+.btn-stand:hover, .btn-stand:active {
   background-color: var(--darker-yellow);
+  border: none;
 }
+
 
 table, th, td {
   margin-top: 15px;
