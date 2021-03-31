@@ -1,5 +1,5 @@
 import React from 'react'
-
+// a simple table for displaying the score
 const Score = ({ win, loss, draw }) => {
     return (
         <table>
