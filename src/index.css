@@ -57,7 +57,7 @@ code {
   background-color: var(--primary-orange);
   border: none;
 }
-.btn-hit:hover, .btn-hit:active {
+.btn-hit:hover, .btn-hit:focus {
   background-color: var(--darker-orange);
   border: none;
 }
@@ -65,7 +65,7 @@ code {
   background-color: var(--primary-yellow);
   border: none;
 }
-.btn-stand:hover, .btn-stand:active {
+.btn-stand:hover, .btn-stand:focus {
   background-color: var(--darker-yellow);
   border: none;
 }
