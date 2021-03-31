@@ -120,7 +120,7 @@ const Blackjack = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container>
+            <Container className="buttons-score">
                 <Row>
                     <div className="">
                         <Button className="btn-hit player-btn" onClick={playerCard}
