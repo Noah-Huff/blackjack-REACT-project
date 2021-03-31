@@ -2,7 +2,7 @@
   "name": "blackjack-react-project",
   "version": "1.0.0",
   "description": "Client Side Scripting for a simple Blackjack game",
-  "main": "blackjack/build/index.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm start --prefix blackjack"
