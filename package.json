@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run static --prefix blackjack"
   },
+  "engines": {
+    "node": "14.14.35"
+  },
   "@types/node": {
     "version": "14.14.35",
     "resolved": "https://registry.npmjs.org/@types/node/-/node-14.14.35.tgz",
