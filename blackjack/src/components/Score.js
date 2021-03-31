@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Score = () => {
+const Score = ({ win, loss, draw }) => {
     return (
         <table>
             <tbody>
@@ -10,9 +10,9 @@ const Score = () => {
                     <th>Losses</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>{win}</td>
+                    <td>{draw}</td>
+                    <td>{loss}</td>
                 </tr>
             </tbody>
         </table>
