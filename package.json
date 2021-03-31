@@ -1,39 +1,26 @@
 {
-  "name": "blackjack",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.5.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.1"
-  },
+  "name": "blackjack-react-project",
+  "version": "1.0.0",
+  "description": "Client Side Scripting for a simple Blackjack game",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start --prefix blackjack"
+    
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "@types/node": {
+    "version": "14.14.35",
+    "resolved": "https://registry.npmjs.org/@types/node/-/node-14.14.35.tgz",
+    "integrity": "sha512-Lt+wj8NVPx0zUmUwumiVXapmaLUcAk3yPuHCFVXras9k5VT9TdhJqKqGVUQCD60OTMCl0qxJ57OiTL0Mic3Iag=="
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noah-Huff/blackjack-REACT-project.git"
+  },
+  "author": "Noah Huff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noah-Huff/blackjack-REACT-project/issues"
+  },
+  "homepage": "https://github.com/Noah-Huff/blackjack-REACT-project#readme"
 }
