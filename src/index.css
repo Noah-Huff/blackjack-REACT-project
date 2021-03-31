@@ -57,7 +57,11 @@ code {
   background-color: var(--primary-orange);
   border: none;
 }
-.btn-hit:hover, .btn-hit:focus {
+.btn-hit:hover {
+  background-color: var(--darker-orange);
+  border: none;
+}
+.btn-hit:focus {
   background-color: var(--darker-orange);
   border: none;
 }
@@ -65,8 +69,21 @@ code {
   background-color: var(--primary-yellow);
   border: none;
 }
-.btn-stand:hover, .btn-stand:focus {
+.btn-stand:hover {
   background-color: var(--darker-yellow);
+  border: none;
+}
+.btn-stand:focus {
+  background-color: var(--darker-yellow);
+  border: none;
+}
+.btn-deal {
+  border: none;
+}
+.btn-deal:hover {
+  border: none;
+}
+.btn-deal:focus {
   border: none;
 }
 
