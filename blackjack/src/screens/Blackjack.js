@@ -38,7 +38,7 @@ const Blackjack = () => {
         }
     }
 
-
+    // the computer's turn
     let dealerPlay = () => {
         if (pCard.length > 1) {
 
